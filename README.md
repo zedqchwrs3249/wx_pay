@@ -51,7 +51,6 @@ WxPay.appsecret = 'YOUR_SECRET'
 WxPay.extra_rest_client_options = {timeout: 2, open_timeout: 3}
 ```
 
-~~If you need to use sandbox mode.~~
 (Please be aware, the WeChat has aborted the sandbox env already)
 ```ruby
 WxPay.appid = 'YOUR_APPID'
