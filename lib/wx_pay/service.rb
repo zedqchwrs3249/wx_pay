@@ -37,6 +37,7 @@ module WxPay
 
     def self.authenticate_from_weapp(js_code, options = {})
       options = WxPay.extra_rest_client_options.merge(options)
+      Rails.logger.info "*************options***#{options}"
       payload = {
         appid: options.delete(:appid) || WxPay.appid,
         secret: options.delete(:appsecret) || WxPay.appsecret,
