@@ -27,6 +27,7 @@ module WxPay
       end
     end
 
+    # options include appid zhengshu haiyoushenme
     def self.verify?(params, options = {})
       params = params.dup
       params["appid"] = options[:appid] if options[:appid]
